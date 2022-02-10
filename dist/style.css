@@ -514,6 +514,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -10.625;
 }
 
+.top-\[-23\.688rem\]{
+  top: -23.688rem;
+}
+
+.left-\[17\.313rem\]{
+  left: 17.313rem;
+}
+
+.left-\[-17\.313rem\]{
+  left: -17.313rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -563,6 +575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
+.h-\[55rem\]{
+  height: 55rem;
+}
+
 .w-\[28\.625rem\]{
   width: 28.625rem;
 }
@@ -585,6 +601,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[20\.5rem\]{
   width: 20.5rem;
+}
+
+.w-\[55rem\]{
+  width: 55rem;
 }
 
 .flex-col{
@@ -613,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4{
   gap: 1rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-x-hidden{
@@ -752,4 +776,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#5175FF\]{
   --tw-text-opacity: 1;
   color: rgb(81 117 255 / var(--tw-text-opacity));
+}
+
+.text-white\/75{
+  color: rgb(255 255 255 / 0.75);
+}
+
+.shadow-\[0_50px_50px_-25px_rgba\(75\2c 92\2c 154\2c 0\.2472\)\]{
+  --tw-shadow: 0 50px 50px -25px rgba(75,92,154,0.2472);
+  --tw-shadow-colored: 0 50px 50px -25px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
