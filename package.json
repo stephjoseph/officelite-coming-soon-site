@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/stephjoseph/officelite-coming-soon-site/issues"
   },
-  "homepage": "https://github.com/stephjoseph/officelite-coming-soon-site#readme"
+  "homepage": "https://github.com/stephjoseph/officelite-coming-soon-site#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7",
+    "tailwindcss": "^3.0.19"
+  }
 }
