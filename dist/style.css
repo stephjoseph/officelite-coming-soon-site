@@ -469,3 +469,197 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.-top-\[10\.625rem\]{
+  top: -10.625rem;
+}
+
+.-left-\[2\.625\]{
+  left: -2.625;
+}
+
+.top-\[10\.625rem\]{
+  top: 10.625rem;
+}
+
+.left-\[-2\.625\]{
+  left: -2.625;
+}
+
+.top-\[-10\.625rem\]{
+  top: -10.625rem;
+}
+
+.left-\[-2\.625rem\]{
+  left: -2.625rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-\[-10\.625\]{
+  top: -10.625;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-\[2\.875rem\]{
+  margin-top: 2.875rem;
+}
+
+.mb-\[5rem\]{
+  margin-bottom: 5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
+.mb-\[6\.25rem\]{
+  margin-bottom: 6.25rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-\[28\.625rem\]{
+  height: 28.625rem;
+}
+
+.h-\[12rem\]{
+  height: 12rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.w-\[28\.625rem\]{
+  width: 28.625rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-\[23\.438rem\]{
+  width: 23.438rem;
+}
+
+.w-\[10\.688rem\]{
+  width: 10.688rem;
+}
+
+.w-\[20\.438rem\]{
+  width: 20.438rem;
+}
+
+.w-\[20\.5rem\]{
+  width: 20.5rem;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.rounded-\[28px\]{
+  border-radius: 28px;
+}
+
+.bg-\[\#5175FF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 117 255 / var(--tw-bg-opacity));
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-\[\'Kumbh_Sans\'\]{
+  font-family: 'Kumbh Sans';
+}
+
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[747B95rem\]{
+  font-size: 747B95rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
+.leading-\[3rem\]{
+  line-height: 3rem;
+}
+
+.leading-\[1\.625rem\]{
+  line-height: 1.625rem;
+}
+
+.tracking-normal{
+  letter-spacing: 0em;
+}
+
+.text-\[\#333950\]{
+  --tw-text-opacity: 1;
+  color: rgb(51 57 80 / var(--tw-text-opacity));
+}
+
+.text-\[\#747B95\]{
+  --tw-text-opacity: 1;
+  color: rgb(116 123 149 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
