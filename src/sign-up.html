@@ -1,36 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
 
     <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+  </head>
+  <body
+    class="flex flex-col items-center overflow-x-hidden bg-[#FAFAFA] font-['Kumbh_Sans']"
+  >
+    <header class="relative mb-16 flex w-[23.438rem] flex-col items-center">
+      <div
+        class="absolute top-[-10.625rem] left-[-2.625rem] h-[28.625rem] w-[28.625rem]"
+      >
+        <img
+          class="h-[28.625rem] w-[28.625rem]"
+          src="../assets/home/bg-pattern-header.svg"
+          alt=""
+        />
+      </div>
+      <a
+        class="z-10 mt-[2.875rem] mb-[5rem]"
+        href="#"
+        aria-label="officelite home"
+      >
+        <img src="../assets/shared/logo.svg" alt="officelite logo" />
+      </a>
+      <div
+        class="z-10 mx-auto flex w-[20.438rem] flex-col items-center gap-4 text-center"
+      >
+        <h1
+          class="text-[2.5rem] font-bold leading-[3rem] tracking-normal text-[#333950]"
+        >
+          Work smarter.<br />
+          Save time.
+        </h1>
+        <p
+          class="text-base font-normal leading-[1.625rem] tracking-normal text-[#747B95]"
+        >
+          Easily manage your projects. Get on the list and receive in-app perks
+          available only to early subscribers. We are moving into final
+          development and getting ready for official launch soon.
+        </p>
+      </div>
+    </header>
+    <main class="z-10 mx-auto flex w-[20.5rem] flex-col items-center gap-16">
+      <div class="z-10 flex flex-col items-center gap-[1.125rem]">
+        <p
+          class="text-base font-bold uppercase leading-[3rem] tracking-[5px] text-[#333950]"
+        >
+          Coming <span class="text-[#5175FF]">4 Nov 2020</span>
+        </p>
+        <div class="flex items-center gap-[0.813rem]">
+          <div
+            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem]"
+          >
+            <p
+              class="text-[2rem] font-bold leading-[3rem] tracking-normal text-[#5175FF]"
+            >
+              47
+            </p>
+            <p
+              class="text-[0.75rem] font-bold leading-[1.75rem] tracking-normal text-[#333950]/50"
+            >
+              days
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem]"
+          >
+            <p
+              class="text-[2rem] font-bold leading-[3rem] tracking-normal text-[#5175FF]"
+            >
+              07
+            </p>
+            <p
+              class="text-[0.75rem] font-bold leading-[1.75rem] tracking-normal text-[#333950]/50"
+            >
+              hours
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem]"
+          >
+            <p
+              class="text-[2rem] font-bold leading-[3rem] tracking-normal text-[#5175FF]"
+            >
+              56
+            </p>
+            <p
+              class="text-[0.75rem] font-bold leading-[1.75rem] tracking-normal text-[#333950]/50"
+            >
+              min
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem]"
+          >
+            <p
+              class="text-[2rem] font-bold leading-[3rem] tracking-normal text-[#5175FF]"
+            >
+              14
+            </p>
+            <p
+              class="text-[0.75rem] font-bold leading-[1.75rem] tracking-normal text-[#333950]/50"
+            >
+              sec
+            </p>
+          </div>
+        </div>
+      </div>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+      <form
+        class="mx-auto flex w-[20.438rem] flex-col gap-6 rounded-[13px] bg-white p-6"
+      >
+        <div class="flex flex-col gap-4">
+          <input
+            class="h-[1.75rem] w-full pl-4 placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <div class="flex flex-col gap-4">
+          <input
+            class="h-[1.75rem] w-full pl-4 placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <div class="flex flex-col gap-4">
+          <select
+            class="h-[1.75rem] w-full bg-white pl-4 pr-6 text-base font-bold leading-[1.75rem] tracking-normal placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            name="package"
+            id="package"
+          >
+            <option value="basic">Basic Pack</option>
+            <option value="pro">Pro Pack $9.99</option>
+            <option value="ultimate">Ultimate Pack $19.99</option>
+          </select>
+          <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <div class="flex flex-col gap-4">
+          <input
+            class="h-[1.75rem] w-full pl-4 placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+          />
+          <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <div class="mb-4 flex flex-col gap-4">
+          <input
+            class="h-[1.75rem] w-full pl-4 placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="text"
+            id="company"
+            name="comopany"
+            placeholder="Company"
+          />
+          <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <button
+          class="flex h-14 w-[17.438rem] items-center justify-center rounded-[28px] bg-[#5175FF] text-base font-bold leading-[1.75rem] tracking-normal text-white"
+        >
+          Get on the list
+        </button>
+      </form>
+    </main>
+    <footer
+      class="relative -mt-[14.563rem] h-[20rem] w-full overflow-hidden bg-[#25293A]"
+    >
+      <div
+        class="absolute left-[-25.813rem] top-[-25.813rem] h-[75.125rem] w-[75.125rem]"
+      >
+        <img
+          class="h-[75.125rem] w-[75.125rem]"
+          src="../assets/sign-up/bg-pattern-side.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
 </html>
