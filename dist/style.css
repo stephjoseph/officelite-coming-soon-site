@@ -1407,6 +1407,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: -23.688rem;
   }
 
+  .xl\:left-\[-43\.875rem\]{
+    left: -43.875rem;
+  }
+
+  .xl\:top-\[-72\.125rem\]{
+    top: -72.125rem;
+  }
+
+  .xl\:top-\[0\]{
+    top: 0;
+  }
+
+  .xl\:top-\[-38\.375rem\]{
+    top: -38.375rem;
+  }
+
   .xl\:mb-\[6\.375rem\]{
     margin-bottom: 6.375rem;
   }
@@ -1431,6 +1447,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0px;
   }
 
+  .xl\:-mt-0{
+    margin-top: -0px;
+  }
+
+  .xl\:-mt-\[15\.875rem\]{
+    margin-top: -15.875rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -1449,6 +1473,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:h-\[31\.75rem\]{
     height: 31.75rem;
+  }
+
+  .xl\:h-\[127\.25rem\]{
+    height: 127.25rem;
   }
 
   .xl\:w-\[69\.375rem\]{
@@ -1479,6 +1507,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 21.875rem;
   }
 
+  .xl\:w-\[127\.25rem\]{
+    width: 127.25rem;
+  }
+
   .xl\:flex-row{
     flex-direction: row;
   }
@@ -1495,12 +1527,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: flex-start;
   }
 
+  .xl\:justify-between{
+    justify-content: space-between;
+  }
+
   .xl\:gap-\[5\.938rem\]{
     gap: 5.938rem;
   }
 
   .xl\:gap-14{
     gap: 3.5rem;
+  }
+
+  .xl\:gap-0{
+    gap: 0px;
   }
 
   .xl\:px-\[4\.063rem\]{
@@ -1536,6 +1576,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:px-\[10\.313rem\]{
+    padding-left: 10.313rem;
+    padding-right: 10.313rem;
+  }
+
+  .xl\:pt-\[21rem\]{
+    padding-top: 21rem;
+  }
+
+  .xl\:pb-\[5\.688rem\]{
+    padding-bottom: 5.688rem;
   }
 
   .xl\:text-center{
