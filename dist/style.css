@@ -623,6 +623,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
+.h-\[100vh\]{
+  height: 100vh;
+}
+
+.h-\[64rem\]{
+  height: 64rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
 .w-\[23\.438rem\]{
   width: 23.438rem;
 }
@@ -653,6 +665,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[75\.125rem\]{
   width: 75.125rem;
+}
+
+.w-\[26\.25rem\]{
+  width: 26.25rem;
 }
 
 .flex-col{
@@ -1423,6 +1439,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: -38.375rem;
   }
 
+  .xl\:left-\[-47\.688rem\]{
+    left: -47.688rem;
+  }
+
+  .xl\:top-\[-48\.813rem\]{
+    top: -48.813rem;
+  }
+
+  .xl\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .xl\:mb-\[6\.375rem\]{
     margin-bottom: 6.375rem;
   }
@@ -1455,6 +1489,58 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: -15.875rem;
   }
 
+  .xl\:ml-\[10\.313rem\]{
+    margin-left: 10.313rem;
+  }
+
+  .xl\:ml-0{
+    margin-left: 0px;
+  }
+
+  .xl\:mb-\[9\.625rem\]{
+    margin-bottom: 9.625rem;
+  }
+
+  .xl\:mt-\[5\.063rem\]{
+    margin-top: 5.063rem;
+  }
+
+  .xl\:mr-\[7\.813rem\]{
+    margin-right: 7.813rem;
+  }
+
+  .xl\:mt-\[14\.813rem\]{
+    margin-top: 14.813rem;
+  }
+
+  .xl\:mt-0{
+    margin-top: 0px;
+  }
+
+  .xl\:mt-\[14\.813\]{
+    margin-top: 14.813;
+  }
+
+  .xl\:-mt-\[15\.938rem\]{
+    margin-top: -15.938rem;
+  }
+
+  .xl\:-mr-\[15\.938rem\]{
+    margin-right: -15.938rem;
+  }
+
+  .xl\:-ml-\[15\.938rem\]{
+    margin-left: -15.938rem;
+  }
+
+  .xl\:mb-\[18\.688rem\]{
+    margin-bottom: 18.688rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -1477,6 +1563,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:h-\[127\.25rem\]{
     height: 127.25rem;
+  }
+
+  .xl\:h-full{
+    height: 100%;
+  }
+
+  .xl\:h-\[72rem\]{
+    height: 72rem;
+  }
+
+  .xl\:h-\[100vh\]{
+    height: 100vh;
+  }
+
+  .xl\:h-auto{
+    height: auto;
+  }
+
+  .xl\:h-\[100\%\]{
+    height: 100%;
+  }
+
+  .xl\:h-\[64rem\]{
+    height: 64rem;
+  }
+
+  .xl\:max-h-\[64rem\]{
+    max-height: 64rem;
   }
 
   .xl\:w-\[69\.375rem\]{
@@ -1511,12 +1625,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 127.25rem;
   }
 
+  .xl\:w-\[26\.25rem\]{
+    width: 26.25rem;
+  }
+
   .xl\:flex-row{
     flex-direction: row;
   }
 
   .xl\:flex-col{
     flex-direction: column;
+  }
+
+  .xl\:items-start{
+    align-items: flex-start;
   }
 
   .xl\:items-center{
@@ -1541,6 +1663,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:gap-0{
     gap: 0px;
+  }
+
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .xl\:overflow-hidden{
+    overflow: hidden;
   }
 
   .xl\:px-\[4\.063rem\]{
@@ -1589,6 +1719,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pb-\[5\.688rem\]{
     padding-bottom: 5.688rem;
+  }
+
+  .xl\:text-left{
+    text-align: left;
   }
 
   .xl\:text-center{
