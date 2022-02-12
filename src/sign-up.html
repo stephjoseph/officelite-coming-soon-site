@@ -15,10 +15,10 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
   </head>
   <body
-    class="flex flex-col items-center overflow-x-hidden bg-[#FAFAFA] font-['Kumbh_Sans']"
+    class="flex h-full flex-col items-center overflow-x-hidden bg-[#FAFAFA] font-['Kumbh_Sans'] xl:max-h-[64rem] xl:flex-row xl:items-start"
   >
     <header
-      class="relative mb-16 flex w-[23.438rem] flex-col items-center md:mb-10 md:w-[35.813rem]"
+      class="relative mb-16 flex w-[23.438rem] flex-col items-center md:mb-[6.5rem] md:w-[35.813rem] xl:mr-[7.813rem] xl:mb-[18.688rem] xl:ml-[10.313rem] xl:w-[33.75rem] xl:items-start"
     >
       <div
         class="absolute top-[-10.625rem] left-[-2.625rem] h-[28.625rem] w-[28.625rem] md:hidden"
@@ -30,33 +30,29 @@
         />
       </div>
       <a
-        class="z-10 mt-[2.875rem] mb-[6.5rem] md:mt-[4.5rem] md:-ml-[3.688rem] md:self-start"
+        class="z-10 mt-[2.875rem] mb-[5rem] md:mb-[6.5rem] md:mt-[4.5rem] md:-ml-[3.688rem] md:self-start xl:mt-[5.063rem] xl:mb-[9.625rem] xl:ml-0"
         href="#"
         aria-label="officelite home"
       >
         <img src="../assets/shared/logo.svg" alt="officelite logo" />
       </a>
       <div
-        class="z-10 mx-auto flex w-[20.438rem] flex-col items-center gap-4 text-center md:mx-0 md:w-[35.813rem]"
+        class="z-10 mx-auto mb-16 flex w-[20.438rem] flex-col items-center gap-4 text-center md:mx-0 md:mb-10 md:w-[35.813rem] xl:w-[33.75rem] xl:items-start xl:gap-6 xl:text-left"
       >
         <h1
-          class="text-[2.5rem] font-bold leading-[3rem] tracking-normal text-[#333950]"
+          class="text-[2.5rem] font-bold leading-[3rem] tracking-normal text-[#333950] xl:text-[3.5rem] xl:leading-[4rem]"
         >
           Work smarter.<br class="md:hidden" />
           Save time.
         </h1>
         <p
-          class="text-base font-normal leading-[1.625rem] tracking-normal text-[#747B95]"
+          class="text-base font-normal leading-[1.625rem] tracking-normal text-[#747B95] xl:text-lg"
         >
           Easily manage your projects. Get on the list and receive in-app perks
           available only to early subscribers. We are moving into final
           development and getting ready for official launch soon.
         </p>
       </div>
-    </header>
-    <main
-      class="z-10 mx-auto flex w-[20.5rem] flex-col items-center gap-16 md:w-[28rem]"
-    >
       <div class="z-10 flex flex-col items-center gap-[1.125rem]">
         <p
           class="text-base font-bold uppercase leading-[3rem] tracking-[5px] text-[#333950]"
@@ -122,7 +118,10 @@
           </div>
         </div>
       </div>
-
+    </header>
+    <main
+      class="z-10 mx-auto flex w-[20.5rem] flex-col items-center md:w-[28rem] xl:mx-0 xl:mt-[14.813rem]"
+    >
       <form
         class="mx-auto flex w-[20.438rem] flex-col gap-6 rounded-[13px] bg-white p-6 md:w-[27.813rem] md:px-[2.656rem] md:pt-10 md:pb-[3.188rem]"
       >
@@ -185,14 +184,15 @@
         </button>
       </form>
     </main>
+
     <footer
-      class="relative -mt-[14.563rem] h-[20rem] w-full overflow-hidden bg-[#25293A] md:-mt-[16.063rem] md:h-[23.75rem]"
+      class="relative -mt-[14.563rem] h-[20rem] w-full overflow-hidden bg-[#25293A] md:-mt-[16.063rem] md:h-[23.75rem] xl:mt-0 xl:-ml-[15.938rem] xl:h-[64rem]"
     >
       <div
-        class="absolute left-[-25.813rem] top-[-25.813rem] h-[75.125rem] w-[75.125rem] md:top-[-23.199rem] md:left-[-8.199rem] md:h-[64.273rem] md:w-[64.273rem]"
+        class="absolute left-[-25.813rem] top-[-25.813rem] h-[75.125rem] w-[75.125rem] md:top-[-23.199rem] md:left-[-8.199rem] md:h-[64.273rem] md:w-[64.273rem] xl:top-[-48.813rem] xl:left-[-47.688rem] xl:h-[127.25rem] xl:w-[127.25rem]"
       >
         <img
-          class="h-[75.125rem] w-[75.125rem] md:h-[64.273rem] md:w-[64.273rem]"
+          class="h-[75.125rem] w-[75.125rem] md:h-[64.273rem] md:w-[64.273rem] xl:h-[127.25rem] xl:w-[127.25rem]"
           src="../assets/sign-up/bg-pattern-side.svg"
           alt=""
         />
