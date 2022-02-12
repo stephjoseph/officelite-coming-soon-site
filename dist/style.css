@@ -794,6 +794,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.px-\[1\.8rem\]{
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+.px-\[1\.5rem\]{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-\[1rem\]{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-\[55\.875rem\]{
   padding-top: 55.875rem;
 }
@@ -1384,6 +1399,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 0rem;
   }
 
+  .xl\:left-\[-16\.563rem\]{
+    left: -16.563rem;
+  }
+
+  .xl\:top-\[-23\.688rem\]{
+    top: -23.688rem;
+  }
+
   .xl\:mb-\[6\.375rem\]{
     margin-bottom: 6.375rem;
   }
@@ -1400,6 +1423,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 11.5rem;
   }
 
+  .xl\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .xl\:flex{
+    display: flex;
+  }
+
   .xl\:hidden{
     display: none;
   }
@@ -1410,6 +1445,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:h-\[70\.875rem\]{
     height: 70.875rem;
+  }
+
+  .xl\:h-\[31\.75rem\]{
+    height: 31.75rem;
   }
 
   .xl\:w-\[69\.375rem\]{
@@ -1428,8 +1467,79 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 70.875rem;
   }
 
+  .xl\:w-\[13\.813rem\]{
+    width: 13.813rem;
+  }
+
+  .xl\:w-\[21\.938rem\]{
+    width: 21.938rem;
+  }
+
+  .xl\:w-\[21\.875rem\]{
+    width: 21.875rem;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:flex-col{
+    flex-direction: column;
+  }
+
+  .xl\:items-center{
+    align-items: center;
+  }
+
+  .xl\:justify-start{
+    justify-content: flex-start;
+  }
+
   .xl\:gap-\[5\.938rem\]{
     gap: 5.938rem;
+  }
+
+  .xl\:gap-14{
+    gap: 3.5rem;
+  }
+
+  .xl\:px-\[4\.063rem\]{
+    padding-left: 4.063rem;
+    padding-right: 4.063rem;
+  }
+
+  .xl\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:px-\[4\.rem\]{
+    padding-left: 4.rem;
+    padding-right: 4.rem;
+  }
+
+  .xl\:px-\[4rem\]{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:px-\[3\.9rem\]{
+    padding-left: 3.9rem;
+    padding-right: 3.9rem;
+  }
+
+  .xl\:px-\[3\.5rem\]{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:text-center{
+    text-align: center;
   }
 
   .xl\:text-\[3\.5rem\]{
