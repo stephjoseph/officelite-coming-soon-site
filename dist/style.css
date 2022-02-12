@@ -1358,3 +1358,94 @@ Ensure the default browser behavior of the `hidden` attribute.
     letter-spacing: 3rem;
   }
 }
+
+@media (min-width: 1280px){
+  .xl\:left-0{
+    left: 0px;
+  }
+
+  .xl\:top-0{
+    top: 0px;
+  }
+
+  .xl\:left-\[30\.688rem\]{
+    left: 30.688rem;
+  }
+
+  .xl\:top-\[-26\.188rem\]{
+    top: -26.188rem;
+  }
+
+  .xl\:left-\[0rem\]{
+    left: 0rem;
+  }
+
+  .xl\:top-\[0rem\]{
+    top: 0rem;
+  }
+
+  .xl\:mb-\[6\.375rem\]{
+    margin-bottom: 6.375rem;
+  }
+
+  .xl\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .xl\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
+  .xl\:mb-\[11\.5rem\]{
+    margin-bottom: 11.5rem;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:h-\[33\.188rem\]{
+    height: 33.188rem;
+  }
+
+  .xl\:h-\[70\.875rem\]{
+    height: 70.875rem;
+  }
+
+  .xl\:w-\[69\.375rem\]{
+    width: 69.375rem;
+  }
+
+  .xl\:w-\[33\.75rem\]{
+    width: 33.75rem;
+  }
+
+  .xl\:w-\[29\.688rem\]{
+    width: 29.688rem;
+  }
+
+  .xl\:w-\[70\.875rem\]{
+    width: 70.875rem;
+  }
+
+  .xl\:gap-\[5\.938rem\]{
+    gap: 5.938rem;
+  }
+
+  .xl\:text-\[3\.5rem\]{
+    font-size: 3.5rem;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:leading-\[4rem\]{
+    line-height: 4rem;
+  }
+
+  .xl\:leading-\[1\.75rem\]{
+    line-height: 1.75rem;
+  }
+}
