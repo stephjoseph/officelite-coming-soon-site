@@ -18,76 +18,91 @@
     class="flex flex-col items-center overflow-x-hidden bg-[#FAFAFA] font-['Kumbh_Sans']"
   >
     <header
-      class="relative mb-[6.25rem] flex w-[23.438rem] flex-col items-center"
+      class="relative mb-[6.25rem] flex w-[23.438rem] flex-col items-center md:mx-auto md:mb-[8.75rem] md:w-[43.063rem] md:items-start"
     >
       <div
-        class="absolute top-[-10.625rem] left-[-2.625rem] h-[28.625rem] w-[28.625rem]"
+        class="absolute top-[-10.625rem] left-[-2.625rem] h-[28.625rem] w-[28.625rem] md:left-[22.25rem] md:top-[-10.25rem] md:h-[41.625rem] md:w-[41.625rem]"
       >
         <img
-          class="h-[28.625rem] w-[28.625rem]"
+          class="h-[28.625rem] w-[28.625rem] md:h-[41.625rem] md:w-[41.625rem]"
           src="../assets/home/bg-pattern-header.svg"
           alt=""
         />
       </div>
       <a
-        class="z-10 mt-[2.875rem] mb-[5rem]"
+        class="z-10 mt-[2.875rem] mb-[5rem] md:mb-[6.5rem]"
         href="#"
         aria-label="officelite home"
       >
         <img src="../assets/shared/logo.svg" alt="officelite logo" />
       </a>
-      <div class="z-10 mb-16 h-[12rem] w-[10.688rem]">
-        <img
-          class="h-[12rem] w-[10.688rem]"
-          src="../assets/home/illustration-charts.svg"
-          alt=""
-        />
-      </div>
       <div
-        class="mx-auto flex w-[20.438rem] flex-col items-center gap-6 text-center"
+        class="flex flex-col items-center gap-16 md:flex-row-reverse md:gap-[3.938rem] md:self-center"
       >
-        <h1
-          class="text-[2.5rem] font-bold leading-[3rem] tracking-normal text-[#333950]"
+        <div
+          class="z-10 h-[12rem] w-[10.688rem] md:h-[19.625rem] md:w-[17.563rem]"
         >
-          A simple solution to complex tasks is coming soon
-        </h1>
-        <p
-          class="text-base font-normal leading-[1.625rem] tracking-normal text-[#747B95]"
+          <img
+            class="h-[12rem] w-[10.688rem] md:h-[19.625rem] md:w-[17.563rem]"
+            src="../assets/home/illustration-charts.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="mx-auto flex w-[20.438rem] flex-col items-center gap-6 text-center md:w-[21.563rem] md:items-start md:text-left"
         >
-          Say goodbye to inefficient juggling of multiple apps, teams, and
-          projects. Officelite is the new collaboration platform built with an
-          intuitive interface to improve productivity.
-        </p>
-        <a
-          class="flex h-14 w-[10.688rem] items-center justify-center rounded-[28px] bg-[#5175FF] text-base font-bold leading-[1.625rem] tracking-normal text-white"
-          href=""
-          >Get started</a
-        >
+          <h1
+            class="text-[2.5rem] font-bold leading-[3rem] tracking-normal text-[#333950]"
+          >
+            A simple solution to complex tasks is coming soon
+          </h1>
+          <p
+            class="text-base font-normal leading-[1.625rem] tracking-normal text-[#747B95]"
+          >
+            Say goodbye to inefficient juggling of
+            <br class="hidden md:inline" />
+            multiple apps, teams, and projects. Officelite
+            <br class="hidden md:inline" />
+            is the new collaboration platform built with an intuitive interface
+            to improve productivity.
+          </p>
+          <a
+            class="flex h-14 w-[10.688rem] items-center justify-center rounded-[28px] bg-[#5175FF] text-base font-bold leading-[1.625rem] tracking-normal text-white"
+            href=""
+            >Get started</a
+          >
+        </div>
       </div>
     </header>
-    <main class="z-10 mx-auto flex w-[20.5rem] flex-col items-center gap-8">
+    <main
+      class="z-10 mx-auto flex w-[20.5rem] flex-col items-center gap-8 md:w-[43.063rem] md:gap-6"
+    >
       <div
-        class="flex w-full flex-col items-center gap-14 rounded-[13px] bg-white px-[1.875rem] py-10 text-center shadow-[0_50px_50px_-25px_rgba(75,92,154,0.2472)]"
+        class="flex w-full flex-col items-center gap-14 rounded-[13px] bg-white px-[1.875rem] py-10 text-center shadow-[0_50px_50px_-25px_rgba(75,92,154,0.2472)] md:flex-row md:justify-between md:gap-0 md:py-12 md:pl-12 md:pr-[4.25rem] md:text-left"
       >
         <div class="flex flex-col">
           <h2
-            class="mb-10 text-xl font-bold leading-[1.75rem] tracking-normal text-[#333950]"
+            class="mb-10 text-xl font-bold leading-[1.75rem] tracking-normal text-[#333950] md:mb-4"
           >
             Basic
           </h2>
           <p
-            class="mb-2 text-[3.5rem] font-bold leading-[4rem] tracking-normal text-[#333950]"
+            class="mb-2 text-[3.5rem] font-bold leading-[4rem] tracking-normal text-[#333950] md:mb-1"
           >
             Free
           </p>
           <p
-            class="text-base font-normal leading-[1.75rem] tracking-normal text-[#333950]"
+            class="text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] md:mb-6"
           >
             Up to 5 users for free
           </p>
+          <a
+            class="hidden h-14 w-[10.688rem] items-center justify-center rounded-[28px] bg-[#5175FF]/[0.1526] px-[2.5rem] py-[0.875rem] text-base font-bold leading-[1.75rem] tracking-normal text-[#5175FF] md:flex"
+            href="./sign-up.html"">Try for Free</a
+          >
         </div>
-        <div class="flex flex-col items-center gap-8">
-          <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-8 md:items-start">
+          <div class="flex flex-col items-center gap-4 md:items-start">
             <p
               class="text-base font-normal leading-[1.75rem] tracking-normal text-[#747B95]"
             >
@@ -105,7 +120,7 @@
             </p>
           </div>
           <a
-            class="flex h-14 w-[10.688rem] items-center justify-center rounded-[28px] bg-[#5175FF]/[0.1526] px-[2.5rem] py-[0.875rem] text-base font-bold leading-[1.75rem] tracking-normal text-[#5175FF]"
+            class="flex h-14 w-[10.688rem] items-center justify-center rounded-[28px] bg-[#5175FF]/[0.1526] px-[2.5rem] py-[0.875rem] text-base font-bold leading-[1.75rem] tracking-normal text-[#5175FF] md:hidden"
             href="./style.css"
             >Try for Free</a
           >
