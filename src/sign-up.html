@@ -127,7 +127,7 @@
       class="z-10 mx-auto flex w-[20.5rem] flex-col items-center md:w-[28rem] xl:mx-0 xl:mt-[14.813rem]"
     >
       <form
-        class="mx-auto flex w-[20.438rem] flex-col gap-6 rounded-[13px] bg-white p-6 md:w-[27.813rem] md:px-[2.656rem] md:pt-10 md:pb-[3.188rem]"
+        class="relative mx-auto flex w-[20.438rem] flex-col gap-6 rounded-[13px] bg-white p-6 md:w-[27.813rem] md:px-[2.656rem] md:pt-10 md:pb-[3.188rem]"
       >
         <div class="flex flex-col gap-4">
           <input
@@ -150,16 +150,60 @@
           <hr class="h-px w-full text-[#747B95]/50" />
         </div>
         <div class="flex flex-col gap-4">
-          <select
-            class="h-[1.75rem] w-full bg-white pl-4 pr-6 text-base font-bold leading-[1.75rem] tracking-normal placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
-            name="package"
-            id="package"
+          <button
+            id="pack-select"
+            type="button"
+            class="flex h-[1.75rem] w-full items-center justify-between pl-4 pr-6"
           >
-            <option value="basic">Basic Pack</option>
-            <option value="pro">Pro Pack $9.99</option>
-            <option value="ultimate">Ultimate Pack $19.99</option>
-          </select>
+            <p
+              id="selected-pack"
+              class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
+            >
+              Basic Pack <span id="pack-price" class="opacity-40">Free</span>
+            </p>
+            <div class="h-[0.344rem] w-[0.688rem]">
+              <img src="../assets/sign-up/icon-arrow-down.svg" alt="" />
+            </div>
+          </button>
           <hr class="h-px w-full text-[#747B95]/50" />
+        </div>
+        <div
+          id="packs"
+          class="absolute top-[13.438rem] z-10 flex h-[12.375rem] w-[17.438rem] flex-col gap-4 rounded-[8px] border border-solid border-[#333950]/[0.1533] bg-white py-6 px-8 shadow-[0px_50px_50px_-25px_rgba(75,92,154,0.7471)] md:top-[14.438rem] md:w-[22.5rem] xl:w-[22.938rem]"
+        >
+          <button type="button" class="flex items-center justify-between">
+            <p
+              class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
+            >
+              Basic Pack <span id="pack-price" class="opacity-40">Free</span>
+            </p>
+            <div class="h-[0.594rem] w-[0.781rem]">
+              <img src="../assets/sign-up/icon-check.svg" alt="" />
+            </div>
+          </button>
+          <hr class="h-1 w-full text-[#747B95]/25" />
+          <button type="button" class="flex items-center justify-between">
+            <p
+              class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
+            >
+              Pro Pack <span id="pack-price" class="opacity-40">$9.99</span>
+            </p>
+            <div class="hidden h-[0.594rem] w-[0.781rem]">
+              <img src="../assets/sign-up/icon-check.svg" alt="" />
+            </div>
+          </button>
+          <hr class="h-1 w-full text-[#747B95]/25" />
+          <button type="button" class="flex items-center justify-between">
+            <p
+              class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
+            >
+              Ultimate Pack
+              <span id="pack-price" class="opacity-40">$19.99</span>
+            </p>
+            <div class="hidden h-[0.594rem] w-[0.781rem]">
+              <img src="../assets/sign-up/icon-check.svg" alt="" />
+            </div>
+          </button>
         </div>
         <div class="flex flex-col gap-4">
           <input
@@ -182,6 +226,7 @@
           <hr class="h-px w-full text-[#747B95]/50" />
         </div>
         <button
+          type="submit"
           class="flex h-14 w-full items-center justify-center rounded-[28px] bg-[#5175FF] text-base font-bold leading-[1.75rem] tracking-normal text-white"
         >
           Get on the list
@@ -190,7 +235,7 @@
     </main>
 
     <footer
-      class="relative -mt-[14.563rem] h-[20rem] w-full overflow-hidden bg-[#25293A] md:-mt-[16.063rem] md:h-[23.75rem] xl:mt-0 xl:-ml-[15.938rem] xl:h-[64rem]"
+      class="relative -mt-[14.563rem] h-[20rem] w-full overflow-hidden bg-[#25293A] md:-mt-[16.063rem] md:h-[23.75rem] xl:mt-0 xl:-ml-[15.938rem] xl:h-[64rem] xl:w-[26.25rem]"
     >
       <div
         class="absolute left-[-25.813rem] top-[-25.813rem] h-[75.125rem] w-[75.125rem] md:top-[-23.199rem] md:left-[-8.199rem] md:h-[64.273rem] md:w-[64.273rem] xl:top-[-48.813rem] xl:left-[-47.688rem] xl:h-[127.25rem] xl:w-[127.25rem]"
