@@ -470,6 +470,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
@@ -615,6 +623,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.25rem;
 }
 
+.h-\[5\.75rem\]{
+  height: 5.75rem;
+}
+
+.max-h-0{
+  max-height: 0px;
+}
+
 .w-\[23\.438rem\]{
   width: 23.438rem;
 }
@@ -681,6 +697,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[7\.313rem\]{
   width: 7.313rem;
+}
+
+.w-\[4\.5rem\]{
+  width: 4.5rem;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
@@ -820,6 +845,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.p-0{
+  padding: 0px;
+}
+
 .px-\[1\.875rem\]{
   padding-left: 1.875rem;
   padding-right: 1.875rem;
@@ -858,6 +887,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pt-\[55\.875rem\]{
@@ -998,6 +1037,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.4;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .shadow-\[0_50px_50px_-25px_rgba\(75\2c 92\2c 154\2c 0\.2472\)\]{
   --tw-shadow: 0 50px 50px -25px rgba(75,92,154,0.2472);
   --tw-shadow-colored: 0 50px 50px -25px var(--tw-shadow-color);
@@ -1008,6 +1051,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0px 50px 50px -25px rgba(75,92,154,0.7471);
   --tw-shadow-colored: 0px 50px 50px -25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[visibility\]{
+  transition-property: visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[visibility\2c _opacity\]{
+  transition-property: visibility, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .placeholder\:text-base::-moz-placeholder{
