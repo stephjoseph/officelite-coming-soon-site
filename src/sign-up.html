@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="../dist/style.css" />
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+    <title>Officelite | Sign Up</title>
   </head>
   <body
     class="flex h-full flex-col items-center overflow-x-hidden bg-[#FAFAFA] font-['Kumbh_Sans'] xl:max-h-[64rem] xl:flex-row xl:items-start"
@@ -61,7 +61,7 @@
         </p>
         <div class="flex items-center gap-[0.813rem] md:gap-4">
           <div
-            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
+            class="flex h-[5.75rem] w-[4.5rem] flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
           >
             <p
               id="days"
@@ -76,7 +76,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
+            class="flex h-[5.75rem] w-[4.5rem] flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
           >
             <p
               id="hours"
@@ -91,7 +91,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
+            class="flex h-[5.75rem] w-[4.5rem] flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
           >
             <p
               id="minutes"
@@ -106,7 +106,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
+            class="flex h-[5.75rem] w-[4.5rem] flex-col items-center gap-[-0.375rem] rounded-[4px] bg-[#5175FF]/10 px-4 pt-[0.688rem] pb-[0.625rem] md:h-[8rem] md:w-[6.25rem] md:gap-[0.313rem] md:pb-4 md:pt-[1.813rem]"
           >
             <p
               id="seconds"
@@ -159,9 +159,13 @@
               id="selected-pack"
               class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
             >
-              Basic Pack <span id="pack-price" class="opacity-40">Free</span>
+              <span id="pack-name">Basic Pack</span>
+              <span id="pack-price" class="opacity-40">Free</span>
             </p>
-            <div class="h-[0.344rem] w-[0.688rem]">
+            <div
+              id="select-arrow"
+              class="h-[0.344rem] w-[0.688rem] transition-transform duration-300 ease-in"
+            >
               <img src="../assets/sign-up/icon-arrow-down.svg" alt="" />
             </div>
           </button>
@@ -169,36 +173,39 @@
         </div>
         <div
           id="packs"
-          class="absolute top-[13.438rem] z-10 flex h-[12.375rem] w-[17.438rem] flex-col gap-4 rounded-[8px] border border-solid border-[#333950]/[0.1533] bg-white py-6 px-8 shadow-[0px_50px_50px_-25px_rgba(75,92,154,0.7471)] md:top-[14.438rem] md:w-[22.5rem] xl:w-[22.938rem]"
+          class="invisible absolute top-[13.438rem] z-10 flex h-[12.375rem] w-[17.438rem] flex-col gap-4 rounded-[8px] border border-solid border-[#333950]/[0.1533] bg-white py-6 px-8 opacity-0 shadow-[0px_50px_50px_-25px_rgba(75,92,154,0.7471)] transition-[visibility,_opacity] duration-300 ease-in md:top-[14.438rem] md:w-[22.5rem] xl:w-[22.938rem]"
         >
-          <button type="button" class="flex items-center justify-between">
+          <button
+            type="button"
+            class="pack selected flex items-center justify-between"
+          >
             <p
               class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
             >
-              Basic Pack <span id="pack-price" class="opacity-40">Free</span>
+              <span>Basic Pack</span> <span class="opacity-40">Free</span>
             </p>
             <div class="h-[0.594rem] w-[0.781rem]">
               <img src="../assets/sign-up/icon-check.svg" alt="" />
             </div>
           </button>
           <hr class="h-1 w-full text-[#747B95]/25" />
-          <button type="button" class="flex items-center justify-between">
+          <button type="button" class="pack flex items-center justify-between">
             <p
               class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
             >
-              Pro Pack <span id="pack-price" class="opacity-40">$9.99</span>
+              <span>Pro Pack</span> <span class="opacity-40">$9.99</span>
             </p>
             <div class="hidden h-[0.594rem] w-[0.781rem]">
               <img src="../assets/sign-up/icon-check.svg" alt="" />
             </div>
           </button>
           <hr class="h-1 w-full text-[#747B95]/25" />
-          <button type="button" class="flex items-center justify-between">
+          <button type="button" class="pack flex items-center justify-between">
             <p
               class="flex w-auto items-center gap-2 text-base font-bold leading-[1.75rem] tracking-normal text-[#333950]"
             >
-              Ultimate Pack
-              <span id="pack-price" class="opacity-40">$19.99</span>
+              <span>Ultimate Pack</span>
+              <span class="opacity-40">$19.99</span>
             </p>
             <div class="hidden h-[0.594rem] w-[0.781rem]">
               <img src="../assets/sign-up/icon-check.svg" alt="" />
@@ -247,6 +254,6 @@
         />
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="sign-up.js"></script>
   </body>
 </html>
