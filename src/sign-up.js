@@ -63,11 +63,7 @@ document.querySelector("#launch").innerHTML = `${launchDate.getDate()} ${
 
 /* FORM SELECT */
 
-packSelect.addEventListener("click", () => {
-  selectArrow.classList.toggle("rotate-180");
-  packs.classList.toggle("invisible");
-  packs.classList.toggle("opacity-0");
-});
+packSelect.addEventListener("click", toggleSelect);
 
 pack.forEach((package) => {
   package.addEventListener("click", () => {
@@ -81,6 +77,7 @@ pack.forEach((package) => {
       package.children[1].classList.remove("hidden");
     }
     closeSelect();
+    
     packName.innerText = package.children[0].firstElementChild.innerText;
     packPrice.innerText = package.children[0].lastElementChild.innerText;
   });
@@ -90,4 +87,10 @@ function closeSelect() {
   packs.classList.add("invisible");
   packs.classList.add("opacity-0");
   selectArrow.classList.remove("rotate-180");
+}
+
+function toggleSelect() {
+  selectArrow.classList.toggle("rotate-180");
+  packs.classList.toggle("invisible");
+  packs.classList.toggle("opacity-0");
 }
