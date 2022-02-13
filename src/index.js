@@ -1,10 +1,3 @@
-const packSelect = document.querySelector("#pack-select");
-const selectArrow = document.querySelector("#select-arrow");
-const packs = document.querySelector("#packs");
-const pack = document.querySelectorAll("#packs .pack");
-const selectedPack = document.querySelector("#selected-pack");
-const packName = document.querySelector("#pack-name");
-const packPrice = document.querySelector("#pack-price");
 const month = [
   "Jan",
   "Feb",
