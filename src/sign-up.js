@@ -1,3 +1,9 @@
+const form = document.querySelector("#form");
+const fullName = document.querySelector("#name");
+const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
+const company = document.querySelector("#company");
+
 const packSelect = document.querySelector("#pack-select");
 const selectArrow = document.querySelector("#select-arrow");
 const packs = document.querySelector("#packs");
@@ -61,6 +67,82 @@ document.querySelector("#launch").innerHTML = `${launchDate.getDate()} ${
   month[launchDate.getMonth()]
 } ${launchDate.getFullYear()}`;
 
+/* FORM VALIDATION */
+let nameValue = fullName.value.trim();
+let emailValue = email.value.trim();
+let phoneValue = phone.value.trim();
+let companyValue = company.value.trim();
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+
+function checkInputs() {
+  if (fullName.value.trim() === "") {
+    fullName.classList.remove("border-[#747B95]/50");
+    fullName.classList.add("border-[#F05B5B]");
+    fullName.nextElementSibling.classList.remove("invisible");
+  } else {
+    fullName.classList.remove("border-[#F05B5B]");
+    fullName.classList.add("border-[#747B95]/50");
+    fullName.nextElementSibling.classList.add("invisible");
+  }
+
+  if (email.value.trim() === "") {
+    email.classList.remove("border-[#747B95]/50");
+    email.classList.add("border-[#F05B5B]");
+    email.nextElementSibling.classList.remove("invisible");
+  } else if (!isValid(email.value.trim())) {
+    email.classList.remove("text-[#333950]");
+    email.classList.add("text-[#F05B5B]");
+    email.classList.remove("border-[#747B95]/50");
+    email.classList.add("border-[#F05B5B]");
+    email.nextElementSibling.classList.remove("invisible");
+  } else {
+    email.classList.remove("text-[#F05B5B]");
+    email.classList.add("text-[#333950]");
+    email.classList.remove("border-[#F05B5B]");
+    email.classList.add("border-[#747B95]/50");
+    email.nextElementSibling.classList.add("invisible");
+  }
+
+  if (phone.value.trim() === "") {
+    phone.classList.remove("border-[#747B95]/50");
+    phone.classList.add("border-[#F05B5B]");
+    phone.nextElementSibling.classList.remove("invisible");
+  } else if (isNaN(phone.value.trim())) {
+    phone.classList.remove("text-[#333950]");
+    phone.classList.add("text-[#F05B5B]");
+    phone.classList.remove("border-[#747B95]/50");
+    phone.classList.add("border-[#F05B5B]");
+    phone.nextElementSibling.classList.remove("invisible");
+  } else {
+    phone.classList.remove("text-[#F05B5B]");
+    phone.classList.add("text-[#333950]");
+    phone.classList.remove("border-[#F05B5B]");
+    phone.classList.add("border-[#747B95]/50");
+    phone.nextElementSibling.classList.add("invisible");
+  }
+
+  if (company.value.trim() === "") {
+    company.classList.remove("border-[#747B95]/50");
+    company.classList.add("border-[#F05B5B]");
+    company.nextElementSibling.classList.remove("invisible");
+  } else {
+    company.classList.remove("border-[#F05B5B]");
+    company.classList.add("border-[#747B95]/50");
+    company.nextElementSibling.classList.add("invisible");
+  }
+}
+
+function isValid(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}
+
 /* FORM SELECT */
 
 packSelect.addEventListener("click", toggleSelect);
@@ -77,7 +159,7 @@ pack.forEach((package) => {
       package.children[1].classList.remove("hidden");
     }
     closeSelect();
-    
+
     packName.innerText = package.children[0].firstElementChild.innerText;
     packPrice.innerText = package.children[0].lastElementChild.innerText;
   });
