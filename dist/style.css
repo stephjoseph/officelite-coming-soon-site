@@ -1650,6 +1650,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1.5rem;
   }
 
+  .xl\:self-start{
+    align-self: flex-start;
+  }
+
   .xl\:px-\[4\.063rem\]{
     padding-left: 4.063rem;
     padding-right: 4.063rem;
