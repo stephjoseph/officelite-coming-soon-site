@@ -1538,6 +1538,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: -15.938rem;
   }
 
+  .xl\:mt-\[\]{
+    margin-top: ;
+  }
+
   .xl\:flex{
     display: flex;
   }
