@@ -127,24 +127,35 @@
       class="z-10 mx-auto flex w-[20.5rem] flex-col items-center md:w-[28rem] xl:mx-0 xl:mt-[14.813rem]"
     >
       <form
+        action="#"
+        id="form"
+        novalidate
         class="relative mx-auto flex w-[20.438rem] flex-col gap-6 rounded-[13px] bg-white p-6 md:w-[27.813rem] md:px-[2.656rem] md:pt-10 md:pb-[3.188rem]"
       >
-        <input
-          class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Name"
-        />
-
-        <input
-          class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email Address"
-        />
-
+        <div class="relative">
+          <input
+            class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <div class="invisible absolute top-[4px] right-[20px]">
+            <img src="../assets/sign-up/icon-cross.svg" alt="" />
+          </div>
+        </div>
+        <div class="relative">
+          <input
+            class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <div class="invisible absolute top-[4px] right-[20px]">
+            <img src="../assets/sign-up/icon-cross.svg" alt="" />
+          </div>
+        </div>
         <button
           id="pack-select"
           type="button"
@@ -203,23 +214,30 @@
             </div>
           </button>
         </div>
-
-        <input
-          class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Phone Number"
-        />
-
-        <input
-          class="mb-4 h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
-          type="text"
-          id="company"
-          name="comopany"
-          placeholder="Company"
-        />
-
+        <div class="relative">
+          <input
+            class="h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+          />
+          <div class="invisible absolute top-[4px] right-[20px]">
+            <img src="../assets/sign-up/icon-cross.svg" alt="" />
+          </div>
+        </div>
+        <div class="relative">
+          <input
+            class="mb-4 h-[2.813rem] w-full border-b border-solid border-[#747B95]/50 pb-4 pl-4 text-base font-normal leading-[1.75rem] tracking-normal text-[#333950] placeholder:text-base placeholder:font-normal placeholder:leading-[1.75rem] placeholder:tracking-normal placeholder:text-[#747B95]/50 focus:outline-none"
+            type="text"
+            id="company"
+            name="comopany"
+            placeholder="Company"
+          />
+          <div class="invisible absolute top-[4px] right-[20px]">
+            <img src="../assets/sign-up/icon-cross.svg" alt="" />
+          </div>
+        </div>
         <button
           type="submit"
           class="flex h-14 w-full items-center justify-center rounded-[28px] bg-[#5175FF] text-base font-bold leading-[1.75rem] tracking-normal text-white"
