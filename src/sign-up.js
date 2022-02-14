@@ -3,7 +3,6 @@ const fullName = document.querySelector("#name");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const company = document.querySelector("#company");
-
 const packSelect = document.querySelector("#pack-select");
 const selectArrow = document.querySelector("#select-arrow");
 const packs = document.querySelector("#packs");
